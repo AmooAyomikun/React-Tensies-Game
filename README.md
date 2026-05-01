@@ -1,16 +1,40 @@
-# React + Vite
+**Tenzies Game**
+A fast-paced, interactive dice game built with React. The objective is to roll until all ten dice show the same value, "holding" numbers as you go.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo**
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Features**
+**Interactive Gameplay:** Click individual dice to "freeze" them at their current value between rolls.
 
-## React Compiler
+**Win Logic:** Automatically detects when all dice match and are held.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Dynamic Visuals:**
 
-## Expanding the ESLint configuration
+Smooth transitions between "Held" and "Unheld" states.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Confetti explosion upon winning using react-confetti.
+
+**Accessibility (A11y):**
+
+Uses aria-live regions to announce game status to screen readers.
+
+Auto-focuses the "New Game" button upon winning for seamless keyboard navigation.
+
+**Performance:** Optimized state management using lazy state initialization and unique IDs for stable list rendering.
+
+**Tech Stack**
+**Framework:** React (Vite)
+
+**Styling:** CSS3 (Grid & Flexbox)
+
+**Components:** Functional Components with Hooks (useState, useEffect, useRef)
+
+**Library:** react-confetti for win celebrations.
+
+**Lessons Learned**
+During the development of this project, I focused on:
+
+**State Derived Logic:** Learning how to derive gameWon from existing state rather than creating unnecessary extra state variables.
+
+**Refs & Effects:** Using useRef to manipulate the DOM (focusing buttons) in a declarative way.
