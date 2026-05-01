@@ -4,6 +4,8 @@ A fast-paced, interactive dice game built with React. The objective is to roll u
 
 **Live Demo**
 
+https://amooayomikun.github.io/React-Tensies-Game/
+
 
 **Features**
 **Interactive Gameplay:** Click individual dice to "freeze" them at their current value between rolls.
